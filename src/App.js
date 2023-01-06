@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Layout } from "./pages/layout";
+import { Resto }  from "./pages/resto";
+
+import { Entrees } from "./pages/entrees";
+import { Plats } from "./pages/plats";
+import { Desserts } from "./pages/desserts";
+
+import { NoPage } from "./pages/no_page";
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Resto />} />
+
+          <Route path="entrees" element={<Entrees />} />
+          <Route path="plats" element={<Plats />} />
+          <Route path="desserts" element={<Desserts />} />
+
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
