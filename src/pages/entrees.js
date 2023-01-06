@@ -1,3 +1,3 @@
-export const Entrees = () => {
-	return <h1>Entrée unique : œuf mayo</h1>
-}
+export const Entrees = () => {
+  return <h1>Entrée unique : Radis beurre</h1>;
+};
