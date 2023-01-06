@@ -1,6 +1,6 @@
-import {Outlet, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
-function Menu() {
+export function Menu() {
 	return (
 		<div>
 			<ul>
@@ -18,14 +18,5 @@ function Menu() {
 				</li>
 			</ul>
 		</div>
-	)
-}
-
-export const Layout = () => {
-	return(
-		<>
-			<Menu/>
-			<Outlet/>
-		</>
 	)
 }
