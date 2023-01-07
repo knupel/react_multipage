@@ -16,6 +16,9 @@ export function Menu() {
 				<li>
 					<Link to="/desserts">Desserts</Link>
 				</li>
+				<li>
+					<Link to="/boissons">Boissons</Link>
+				</li>
 			</ul>
 		</div>
 	)
