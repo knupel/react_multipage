@@ -1,3 +1,3 @@
 export const NoPage = () => {
-	return <h1>Va falloir faire la plonge mec</h1>
+	return <h1>Passez votre chemin</h1>
 }

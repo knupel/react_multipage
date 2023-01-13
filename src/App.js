@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Layout_A, Layout_B, Layout_C } from "./components/layout";
-import { Resto }  from "./pages/resto";
+import { LayoutA, LayoutB, LayoutC } from "./components/layout";
+import { Lab }  from "./pages/lab";
 
-import { Entrees } from "./pages/entrees";
-import { Plats } from "./pages/plats";
-import { Desserts } from "./pages/desserts";
+import { ProjetA } from "./pages/projet_a";
+import { ProjetB } from "./pages/projet_b";
+import { ProjetC } from "./pages/projet_c";
 
 import { NoPage } from "./pages/no_page";
 
@@ -16,20 +16,20 @@ function App() {
       {/* Before rect 18 'Routes' was 'Switch' */}
       <Routes>
         {/* You can have Route struture with fews elements */}
-        <Route path="/" element={<Layout_A/>}>
+        <Route path="/" element={<LayoutA/>}>
           {/* nested elements of the layout */}
           {/* index take the path '/' */}
-          <Route index element={<Resto />} />
+          <Route index element={<Lab />} />
         </Route>
 
-        <Route path="/" element={<Layout_B/>}>
+        <Route path="/" element={<LayoutB/>}>
           {/* we add the path parameter to '/' from the parent path */}
-          <Route path="entrees" element={<Entrees />} />
-          <Route path="plats" element={<Plats />} />
-          <Route path="desserts" element={<Desserts />} />
+          <Route path="projet_a" element={<ProjetA />} />
+          <Route path="projet_b" element={<ProjetB />} />
+          <Route path="projet_c" element={<ProjetC />} />
         </Route>
 
-        <Route path="/" element={<Layout_C/>}>
+        <Route path="/" element={<LayoutC/>}>
           {/* '*' take the element don't match with any page and return to NoPage like the 404 not found :) */}
           <Route path="*" element={<NoPage />} />
         </Route>

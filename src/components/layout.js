@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import { Menu } from "./menu";
 import "./layout.css"
 
-export const Layout_A = () => {
+export const LayoutA = () => {
 	return(
 		<div className="style_a">
 			<Menu/>
@@ -12,8 +12,7 @@ export const Layout_A = () => {
 	)
 }
 
-
-export const Layout_B = () => {
+export const LayoutB = () => {
 	return(
 		<div className="style_b">
 			<Menu/>
@@ -22,7 +21,7 @@ export const Layout_B = () => {
 	)
 }
 
-export const Layout_C = () => {
+export const LayoutC = () => {
 	return(
 		<div className="style_c">
 			<Menu/>

@@ -1,24 +1,14 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export function Menu() {
 	return (
 		<div>
 			<ul>
-				<li>
-					<Link to="/">Resto</Link>
-				</li>
-				<li>
-					<Link to="/entrees">Entrées</Link>
-				</li>
-				<li>
-					<Link to="/plats">Plats</Link>
-				</li>
-				<li>
-					<Link to="/desserts">Desserts</Link>
-				</li>
-				<li>
-					<Link to="/boissons">Boissons</Link>
-				</li>
+				<li><Link to="/">Lab</Link></li>
+				<li><Link to="/projet_a">Projet A</Link></li>
+				<li><Link to="/projet_b">Projet B</Link></li>
+				<li><Link to="/projet_c">Projet C</Link></li>
+				<li><Link to="/projet_x">Projet X</Link></li>
 			</ul>
 		</div>
 	)
