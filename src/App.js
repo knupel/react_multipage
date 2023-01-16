@@ -13,25 +13,25 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      {/* Before rect 18 'Routes' was 'Switch' */}
+      {/* Before react 18 'Routes' was 'Switch' */}
       <Routes>
         {/* You can have Route struture with fews elements */}
         <Route path="/" element={<LayoutA/>}>
           {/* nested elements of the layout */}
           {/* index take the path '/' */}
-          <Route index element={<Lab />} />
+          <Route index element={<Lab/>}/>
         </Route>
 
         <Route path="/" element={<LayoutB/>}>
           {/* we add the path parameter to '/' from the parent path */}
-          <Route path="projet_a" element={<ProjetA />} />
-          <Route path="projet_b" element={<ProjetB />} />
-          <Route path="projet_c" element={<ProjetC />} />
+          <Route path="projet_a" element={<ProjetA/>} />
+          <Route path="projet_b" element={<ProjetB/>} />
+          <Route path="projet_c" element={<ProjetC/>} />
         </Route>
 
         <Route path="/" element={<LayoutC/>}>
           {/* '*' take the element don't match with any page and return to NoPage like the 404 not found :) */}
-          <Route path="*" element={<NoPage />} />
+          <Route path="*" element={<NoPage/>}/>
         </Route>
 
       </Routes>
